@@ -52,7 +52,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { BsFileText } from "react-icons/bs";
 
 interface IButton {
-  theme: "primary" | "secondary";
+  theme: "primary" | "secondary" | "tertiary" | "danger";
   state?: "rest" | "hover" | "onclick" | "disabled";
   size?: "small" | "medium" | "large";
   label: string;

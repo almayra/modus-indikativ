@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "./Button.tsx";
 
 export default {
-  title: "Button",
+  title: "Atom/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
