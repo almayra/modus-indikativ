@@ -1,36 +1,36 @@
-import React from 'react'
-import {Button} from "./Button"
+import React from "react";
+import { Button } from "./Button.tsx";
 
-export default{
-	title: "Button",
-	component: Button,
-	argTypes: {
-		backgroundColor: {control:'color'},
-	},
-}
+export default {
+  title: "Button",
+  component: Button,
+  argTypes: {
+    backgroundColor: { control: "color" },
+  },
+};
 
-const Template = (args) => <Button {...args} />
+const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-	theme: "primary",
-	label: "Primary"
-}
+  theme: "primary",
+  label: "Primary",
+};
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-	theme: "secondary",
-	label: "Secondary"
-}
+  theme: "secondary",
+  label: "Secondary",
+};
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
-	theme: "tertiary",
-	label: "Tertiary"
-}
+  theme: "tertiary",
+  label: "Tertiary",
+};
 
 export const Danger = Template.bind({});
 Danger.args = {
-	theme: "danger",
-	label: "Danger"
-}
+  theme: "danger",
+  label: "Danger",
+};
