@@ -1,15 +1,14 @@
-import React from 'react'
-import {Typography} from "./Typography"
+import React from "react";
+import { Typography } from "./Metadata.tsx";
 
-export default{
-	title: "Typography",
-	component: Typography
-}
+const Template = (args) => <Typography {...args} />;
 
-const Template = (args) => <Typography {...args}/>
+export const Metadata = Template.bind({});
+Metadata.args = {
+  variant: "bodyShort",
+  label: "The quick brown fox jumps over the lazy dog",
+};
 
-export const TextStyles = Template.bind({});
-TextStyles.args = {
-	variant: "body-short-01",
-	label: "The quick brown fox jumps over the lazy dog"
-}
+const TypographyStory = { title: "Atom/Typography", component: Typography };
+
+export default TypographyStory;
