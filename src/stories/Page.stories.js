@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Page } from './Page';
-import * as HeaderStories from './Header.stories';
-
-export default {
-  title: 'Example/Page',
-  component: Page,
-};
+import { Page } from "./Page";
+import * as HeaderStories from "./Header.stories";
 
 const Template = (args) => <Page {...args} />;
 
@@ -19,3 +14,10 @@ export const LoggedOut = Template.bind({});
 LoggedOut.args = {
   ...HeaderStories.LoggedOut.args,
 };
+
+const pageBook = {
+  title: "Example/Page",
+  component: Page,
+};
+
+export default pageBook;

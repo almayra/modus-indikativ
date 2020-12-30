@@ -7,11 +7,11 @@
   font-weight: normal;
   font-family: "IBM Plex Sans", sans-serif;
 
-  &-bold {
+  &.bold {
     font-weight: 500;
   }
 
-  &-metadata {
+  &.metadata {
     &-01 {
       font-size: 10px;
       line-height: 12px;
@@ -23,7 +23,7 @@
     }
   }
 
-  &-bodyShort {
+  &.body-short {
     &-01 {
       font-size: 14px;
       line-height: 16px;
@@ -35,7 +35,7 @@
     }
   }
 
-  &-bodyLong {
+  &.body-long {
     &-01 {
       font-size: 14px;
       line-height: 20px;
@@ -47,7 +47,7 @@
     }
   }
 
-  &-heading {
+  &.heading {
     &-01 {
       font-weight: 600;
       font-size: 14px;

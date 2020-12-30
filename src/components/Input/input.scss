@@ -1,0 +1,78 @@
+@import "../Colors/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.input-container {
+  &.input-state-rest {
+    .input {
+      background-color: $gray25;
+      color: $gray500;
+      border: none;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-focused {
+    .input {
+      border: 1px solid $gray200;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-valid {
+    .input {
+      border: 1px solid $safe-tint03;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-error {
+    .input {
+      border: 1px solid $danger-tint02;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $danger-tint02;
+    }
+  }
+
+  .input {
+    border-radius: 2px;
+    padding: 4px 12px 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    // EXTRA COMPONENT
+    &-label {
+      margin-bottom: 4px;
+      color: $gray700;
+    }
+
+    &-bottom-text {
+      // font-size: 10px;
+      // font-weight: 400;
+      // line-height: 12px;
+      // font-family: "IBM Plex Sans", sans-serif;
+      color: $gray600;
+      margin-top: 4px;
+      padding-left: 12px;
+    }
+  }
+}

@@ -2,21 +2,21 @@ import React from "react";
 import "./typography.scss";
 import { ITypography } from "./ITypography";
 
-interface IMetadata extends ITypography {
-  variant?: "01" | "02";
+interface IBodyLong extends ITypography {
+  variant: "01" | "02";
 }
 
-const Metadata = ({
+const BodyLong = ({
   bold,
   children,
   className = "",
   style,
   variant = "01",
-}: IMetadata) => {
+}: IBodyLong) => {
   return (
     <div
       style={{ ...style }}
-      className={`typography metadata-${variant} ${
+      className={`typography body-long-${variant} ${
         bold ? "bold" : ""
       } ${className}`}
     >
@@ -25,4 +25,4 @@ const Metadata = ({
   );
 };
 
-export default Metadata;
+export default BodyLong;

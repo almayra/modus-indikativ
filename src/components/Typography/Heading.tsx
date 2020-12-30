@@ -2,21 +2,21 @@ import React from "react";
 import "./typography.scss";
 import { ITypography } from "./ITypography";
 
-interface IMetadata extends ITypography {
-  variant?: "01" | "02";
+interface IHeading extends ITypography {
+  variant: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08";
 }
 
-const Metadata = ({
+const Heading = ({
   bold,
   children,
   className = "",
   style,
   variant = "01",
-}: IMetadata) => {
+}: IHeading) => {
   return (
     <div
       style={{ ...style }}
-      className={`typography metadata-${variant} ${
+      className={`typography heading-${variant} ${
         bold ? "bold" : ""
       } ${className}`}
     >
@@ -25,4 +25,4 @@ const Metadata = ({
   );
 };
 
-export default Metadata;
+export default Heading;
