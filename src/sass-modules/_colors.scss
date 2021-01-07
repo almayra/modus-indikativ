@@ -21,16 +21,16 @@ $fansapp-primary-shade01: #d7803e;
 $fansapp-shade02: #cf733a;
 $fansapp-shade03: #c16036;
 
-$gray0: #ffffff;
-$gray25: #f8f8f8;
-$gray50: #f1f1f1;
-$gray100: #e1e1e1;
-$gray200: #c8c8c8;
-$gray300: #a19f9d;
-$gray400: #919191;
-$gray500: #605e5c;
+$gray0: #ffffff; //primary surface
+$gray25: #f8f8f8; //secondary surfaces
+$gray50: #f1f1f1; //tertiary surfaces
+$gray100: #e1e1e1; //dividers on primary surfaces
+$gray200: #c8c8c8; //dividers on secondary & tertiary surfaces
+$gray300: #a19f9d; //disabled text
+$gray400: #919191; //icons
+$gray500: #605e5c; //secondary text, bottom nav, icons
 $gray600: #404040;
-$gray700: #323130;
+$gray700: #323130; //primary text
 $gray800: #292929;
 $gray900: #212121;
 $gray950: #141414;

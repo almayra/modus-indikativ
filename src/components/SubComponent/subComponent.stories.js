@@ -8,7 +8,7 @@ export const IconWithText = Template.bind({});
 IconWithText.args = {
   state: "text-icon",
   label: "Input label",
-  icon: <ChevronSort16 className="sub-component icon" />,
+  icon: <ChevronSort16 className="sub-component-icon" />,
 };
 
 export const Text = Template.bind({});
@@ -22,7 +22,7 @@ export const Icon = Template.bind({});
 Icon.args = {
   state: "icon",
   label: "",
-  icon: <ChevronSort16 className="sub-component icon" />,
+  icon: <ChevronSort16 />,
 };
 
 const SubComponentStory = {
