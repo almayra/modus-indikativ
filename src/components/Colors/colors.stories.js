@@ -32,21 +32,21 @@ export const Empofarm = () => (
       <table>
         <tbody className={styles.color}>
           <tr>
-            <td>$gray03</td>
+            <td>$empofarm-shade03</td>
             <td>This color token use for</td>
             <td>
               <div className={styles.empofarmShade03}>#4A6A35</div>
             </td>
           </tr>
           <tr>
-            <td>$gray02</td>
+            <td>$empofarm-shade02</td>
             <td>This color token use for</td>
             <td>
               <div className={styles.empofarmShade02}>#547A3D</div>
             </td>
           </tr>
           <tr>
-            <td>$gray01</td>
+            <td>$empofarm-shade01</td>
             <td>This color token use for</td>
             <td>
               <div className={styles.empofarmShade01}>#5F8944</div>
