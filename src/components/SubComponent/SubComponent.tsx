@@ -26,6 +26,8 @@ export const SubComponent = ({
   );
 };
 
+export default SubComponent;
+
 SubComponent.defaultProps = {
   label: "",
   container: true,

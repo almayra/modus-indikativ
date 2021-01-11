@@ -5,8 +5,8 @@ import { BsFileText } from "react-icons/bs";
 
 interface IButton {
   theme: "primary" | "secondary" | "tertiary" | "danger";
-  state?: "rest" | "hover" | "onclick" | "disabled";
-  size?: "small" | "medium" | "large";
+  state: "rest" | "hover" | "onclick" | "disabled";
+  size: "small" | "medium" | "large";
   label: string;
   prepend: boolean;
   append: boolean;
