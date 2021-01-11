@@ -3,21 +3,25 @@ import "./input.scss";
 import Label from "./Label";
 import BottomText from "./BottomText";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  FormGroup,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-} from "reactstrap";
+import { Input, InputGroup, InputGroupAddon, InputGroupText } from "reactstrap";
 
 interface IInput {
   state?: "rest" | "focused" | "error" | "valid";
   inputText: string;
   inputLabel: string;
   bottomText: string;
-  prepend: string;
-  append: string;
+  prepend: any;
+  append: any;
+  type?:
+    | "text"
+    | "textarea"
+    | "number"
+    | "password"
+    | "file"
+    | "select"
+    | "radio"
+    | "checkbox"
+    | "date";
 }
 
 export const CInput = ({
@@ -29,7 +33,7 @@ export const CInput = ({
   prepend,
 }: IInput) => {
   return (
-    <div>
+    <div className={`input-container input-state-${state}`}>
       {inputLabel ? <Label>{inputLabel}</Label> : ""}
       <InputGroup size="sm">
         {prepend ? (
@@ -39,7 +43,7 @@ export const CInput = ({
         ) : (
           ""
         )}
-        <Input placeholder={inputText} />
+        <Input placeholder={inputText} className="input" />
         {append ? (
           <InputGroupAddon addonType="append">
             <InputGroupText>{append}</InputGroupText>

@@ -24,12 +24,20 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={["btn", `btn-${size}`, `btn-${theme}-${state}`].join(" ")}
+      className={[
+        "component-btn",
+        `component-btn-${size}`,
+        `component-btn-${theme}-${state}`,
+      ].join(" ")}
       {...props}
     >
-      {prepend === true ? <BsFileText className="btn-prepend" /> : ""}
+      {prepend === true ? <BsFileText className="component-btn-prepend" /> : ""}
       {label}
-      {append === true ? <FiChevronDown className="btn-append" /> : ""}
+      {append === true ? (
+        <FiChevronDown className="component-btn-append" />
+      ) : (
+        ""
+      )}
     </button>
   );
 };

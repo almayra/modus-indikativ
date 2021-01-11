@@ -10,6 +10,30 @@ Rest.args = {
   prepend: "@",
 };
 
+export const Focused = Template.bind({});
+Focused.args = {
+  state: "focused",
+  inputText: "Placeholder",
+  append: "Input Label",
+  prepend: "@",
+};
+
+export const Error = Template.bind({});
+Error.args = {
+  state: "error",
+  inputText: "Placeholder",
+  append: "Input Label",
+  prepend: "@",
+};
+
+export const Valid = Template.bind({});
+Valid.args = {
+  state: "valid",
+  inputText: "Placeholder",
+  append: "Input Label",
+  prepend: "@",
+};
+
 const InputStory = {
   title: "Atom/Input",
   component: CInput,
