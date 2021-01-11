@@ -35,7 +35,7 @@ Valid.args = {
 };
 
 const InputStory = {
-  title: "Atom/Input",
+  title: "Molecule/Input",
   component: CInput,
 };
 
