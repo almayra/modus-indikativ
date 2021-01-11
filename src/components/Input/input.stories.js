@@ -1,35 +1,18 @@
-import React from "react";
-import { Input } from "./Input.tsx";
+import { CInput } from "./Input.tsx";
 
-const Template = (args) => <Input {...args} />;
+const Template = (args) => <CInput {...args} />;
 
 export const Rest = Template.bind({});
 Rest.args = {
   state: "rest",
   inputText: "Placeholder",
-};
-
-export const Focused = Template.bind({});
-Focused.args = {
-  state: "focused",
-  inputText: "Placeholder",
-};
-
-export const Error = Template.bind({});
-Error.args = {
-  state: "error",
-  inputText: "Placeholder",
-};
-
-export const Valid = Template.bind({});
-Valid.args = {
-  state: "valid",
-  inputText: "Placeholder",
+  append: "Input Label",
+  prepend: "@",
 };
 
 const InputStory = {
   title: "Atom/Input",
-  component: Input,
+  component: CInput,
 };
 
 export default InputStory;

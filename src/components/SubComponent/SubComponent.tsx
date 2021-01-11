@@ -29,6 +29,6 @@ export const SubComponent = ({
 export default SubComponent;
 
 SubComponent.defaultProps = {
-  label: "",
+  label: "Input Label",
   container: true,
 };
