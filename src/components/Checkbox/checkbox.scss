@@ -1,0 +1,102 @@
+@import "../../sass-modules/colors";
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &.monochrome {
+    .checkbox {
+      border: 2px solid $gray500;
+    }
+
+    input:checked ~ .checkbox {
+      background-color: $gray500;
+    }
+  }
+
+  &.green {
+    .checkbox {
+      border: 2px solid $empofarm-primary;
+    }
+
+    input:checked ~ .checkbox {
+      background-color: $empofarm-primary;
+    }
+  }
+
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    &.default {
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+
+      &.checkbox:after {
+        left: 8px;
+        bottom: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    &.small {
+      height: 16px;
+      width: 16px;
+      border-radius: 3px;
+
+      &.checkbox:after {
+        left: 4px;
+        bottom: 3px;
+        width: 5px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    &.xsmall {
+      height: 12px;
+      width: 12px;
+      border-radius: 2px;
+
+      &.checkbox:after {
+        left: 3px;
+        bottom: 2px;
+        width: 3px;
+        height: 6px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+      }
+    }
+  }
+
+  input:active ~ .checkbox {
+    background-color: white;
+  }
+
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .checkbox:after {
+    display: block;
+  }
+}

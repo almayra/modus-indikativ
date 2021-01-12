@@ -16,8 +16,8 @@ interface IInput {
   inputText: string;
   inputLabel: string;
   bottomText: string;
-  prepend?: any;
-  append?: any;
+  prepend: any;
+  append: any;
 }
 
 export const CInput = ({

@@ -1,5 +1,4 @@
 import { CInput } from "./Input.tsx";
-
 const Template = (args) => <CInput {...args} />;
 
 export const Rest = Template.bind({});
@@ -35,7 +34,7 @@ Valid.args = {
 };
 
 const InputStory = {
-  title: "Molecule/Input",
+  title: "Molecule/Form",
   component: CInput,
 };
 
