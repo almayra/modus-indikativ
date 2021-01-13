@@ -82,7 +82,7 @@ export const Spacing = () => (
 );
 
 const SpacingStory = {
-  title: "Atom/Spacing",
+  title: "Atom/Spacing Token",
   parameters: {
     previewTabs: {
       "storybook/docs/panel": {

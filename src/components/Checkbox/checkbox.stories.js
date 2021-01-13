@@ -17,7 +17,6 @@ Green.args = {
 const CheckboxStory = {
   title: "Atom/Checkbox",
   component: Checkbox,
-  size: "default",
 };
 
 export default CheckboxStory;

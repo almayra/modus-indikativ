@@ -5,32 +5,32 @@ export const Rest = Template.bind({});
 Rest.args = {
   state: "rest",
   inputText: "Placeholder",
-  append: "Input Label",
   prepend: "@",
+  append: "Input Label",
 };
 
 export const Focused = Template.bind({});
 Focused.args = {
   state: "focused",
   inputText: "Placeholder",
-  append: "Input Label",
   prepend: "@",
+  append: "Input Label",
 };
 
 export const Error = Template.bind({});
 Error.args = {
   state: "error",
   inputText: "Placeholder",
-  append: "Input Label",
   prepend: "@",
+  append: "Input Label",
 };
 
 export const Valid = Template.bind({});
 Valid.args = {
   state: "valid",
   inputText: "Placeholder",
-  append: "Input Label",
   prepend: "@",
+  append: "Input Label",
 };
 
 const InputStory = {

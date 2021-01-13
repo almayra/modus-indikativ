@@ -60,6 +60,18 @@
     align-items: flex-start;
     box-sizing: border-box;
     font-family: "IBM Plex Sans", sans-serif;
+    border: 1px solid transparent;
+    &::placeholder {
+      color: #6e6e6e;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $gray200;
+      border-radius: 2px;
+    }
+    &:disabled {
+      background-color: #f3f2f1;
+      border-color: #f3f2f1;
+    }
 
     // EXTRA COMPONENT
     &-label {
@@ -72,5 +84,28 @@
       margin-top: 4px;
       padding-left: 12px;
     }
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg width='0.75em' height='0.75em' viewBox='0 0 16 16' class='bi bi-chevron-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 50%;
+  }
+
+  select {
+    padding-right: 22px;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg width='0.75em' height='0.75em' viewBox='0 0 16 16' class='bi bi-chevron-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 50%;
+  }
+  textarea {
+    min-height: 100px;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import "./input.scss";
 import Label from "./Label";
 import BottomText from "./BottomText";
+import "./input.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Input,
@@ -11,13 +11,22 @@ import {
   FormGroup,
 } from "reactstrap";
 
-interface IInput {
+interface IInput extends HTMLInputElement {
   state: "rest" | "focused" | "error" | "valid";
   inputText: string;
   inputLabel: string;
   bottomText: string;
   prepend: any;
   append: any;
+  type:
+    | "text"
+    | "textarea"
+    | "number"
+    | "password"
+    | "file"
+    | "select"
+    | "radio"
+    | "date";
 }
 
 export const CInput = ({
@@ -27,6 +36,7 @@ export const CInput = ({
   bottomText,
   append,
   prepend,
+  type = "text",
 }: IInput) => {
   return (
     <FormGroup className={`input-container input-state-${state}`}>
@@ -39,7 +49,7 @@ export const CInput = ({
         ) : (
           ""
         )}
-        <Input placeholder={inputText} className="input" />
+        <Input placeholder={inputText} type={type} className="input" />
         {append ? (
           <InputGroupAddon addonType="append">
             <InputGroupText>{append}</InputGroupText>
