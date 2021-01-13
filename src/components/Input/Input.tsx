@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 
 interface IInput {
-  state?: "rest" | "focused" | "error" | "valid";
+  state: "rest" | "focused" | "error" | "valid";
   inputText: string;
   inputLabel: string;
   bottomText: string;

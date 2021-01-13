@@ -15,7 +15,7 @@ InlineSelect.args = {
 };
 
 const SelectStory = {
-  title: "Molecule/Select",
+  title: "Molecule/Form/Select",
   component: Select,
 };
 

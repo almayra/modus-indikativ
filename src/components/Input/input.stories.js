@@ -34,7 +34,7 @@ Valid.args = {
 };
 
 const InputStory = {
-  title: "Molecule/Form",
+  title: "Molecule/Form/Form Field",
   component: CInput,
 };
 

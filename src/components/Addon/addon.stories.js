@@ -1,8 +1,8 @@
 import React from "react";
-import { SubComponent } from "./SubComponent";
+import { Addon } from "./Addon";
 import { ChevronSort16 } from "@carbon/icons-react";
 
-const Template = (args) => <SubComponent {...args} />;
+const Template = (args) => <Addon {...args} />;
 
 export const IconWithText = Template.bind({});
 IconWithText.args = {
@@ -25,9 +25,9 @@ Icon.args = {
   icon: <ChevronSort16 />,
 };
 
-const SubComponentStory = {
-  title: "Atom/Sub Component",
-  component: SubComponent,
+const AddonStory = {
+  title: "Atom/Addon",
+  component: Addon,
 };
 
-export default SubComponentStory;
+export default AddonStory;

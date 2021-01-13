@@ -1,24 +1,19 @@
 import React from "react";
-import "./subcomponent.scss";
+import "./addon.scss";
 import Label from "../Input/Label";
 
-interface ISubComponent {
+interface IAddon {
   state: "icon" | "text-icon";
-  label?: string;
+  label: string;
   icon?: React.ReactNode;
   container: boolean;
 }
 
-export const SubComponent = ({
-  label,
-  icon,
-  container,
-  state,
-}: ISubComponent) => {
+export const Addon = ({ label, icon, container, state }: IAddon) => {
   const mode = container === true ? "-container" : "";
   return (
     <div className={`component-container ${state}`}>
-      <span className={[`sub-component`, mode].join("")}>
+      <span className={[`addon`, mode].join("")}>
         {icon ? icon : null}
         {label ? <Label>{label}</Label> : ""}
       </span>
@@ -26,9 +21,9 @@ export const SubComponent = ({
   );
 };
 
-export default SubComponent;
+export default Addon;
 
-SubComponent.defaultProps = {
+Addon.defaultProps = {
   label: "Input Label",
   container: true,
 };

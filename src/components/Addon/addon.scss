@@ -3,37 +3,33 @@
 
 .component-container {
   &.icon {
-    .sub-component-container {
+    .addon-container {
       background-color: $gray100;
     }
   }
 
   &.text-icon {
-    .sub-component-container {
+    .addon-container {
       background-color: $gray50;
     }
   }
 
-  .sub-component {
+  .addon {
     display: inline-flex;
-    flex-direction: row;
-    vertical-align: middle;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
     align-items: center;
     background-color: transparent;
     color: $gray700;
-    height: 100%;
     line-height: 12px;
-    margin-top: 3px;
 
     &-icon {
       margin-right: 4px;
-      vertical-align: middle;
     }
 
     &-container {
+      display: inline-flex;
       padding: 4px 8px;
       box-sizing: border-box;
     }

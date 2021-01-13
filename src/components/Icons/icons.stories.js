@@ -78,7 +78,6 @@ export const All = () => {
                 <div>
                   <span
                     style={{
-                      maxWidth: "100%",
                       textOverflow: "ellipsis",
                       overflow: "hidden",
                       whiteSpace: "nowrap",
