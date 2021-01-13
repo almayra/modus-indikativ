@@ -12,10 +12,11 @@ const BodyLong = ({
   className = "",
   style,
   variant = "01",
+  color,
 }: IBodyLong) => {
   return (
     <div
-      style={{ ...style }}
+      style={{ color, ...style }}
       className={`typography body-long-${variant} ${
         bold ? "bold" : ""
       } ${className}`}

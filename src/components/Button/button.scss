@@ -14,96 +14,78 @@
   vertical-align: middle;
 
   &-primary {
-    &-rest {
-      color: $gray0;
-      background-color: $empofarm-primary;
-    }
+    color: $gray0;
+    background-color: $empofarm-primary;
     &:hover {
-      color: $gray0;
       background-color: $empofarm-tint01;
     }
     &:disabled {
       background-color: $gray25;
       color: $gray400;
     }
-    &-onclick {
-      color: $gray0;
+    &:active {
       background-color: $empofarm-shade02;
-    }
-    &-hover {
-      color: $gray0;
-      background-color: $empofarm-tint01;
-    }
-    &-disabled {
-      background-color: $gray25;
-      color: $gray400;
     }
   }
 
   &-secondary {
-    &-rest {
-      border: 1px solid $gray500;
-      color: $gray700;
-      background-color: $gray0;
-    }
+    border: 1px solid $gray500;
+    color: $gray700;
+    background-color: $gray0;
 
-    &-hover {
+    &:hover {
       border: 1px solid $gray500;
       background-color: $gray50;
       color: $empofarm-primary;
     }
 
-    &-onclick {
+    &:active {
       border: 1px solid $gray500;
       background-color: $gray100;
       color: $empofarm-primary;
     }
 
-    &-disabled {
+    &:disabled {
       background-color: $gray50;
       color: $gray400;
     }
   }
 
   &-tertiary {
-    &-rest {
-      background-color: transparent;
-      color: #0078d4;
-    }
+    background-color: transparent;
+    color: #0078d4;
 
-    &-hover {
+    &:hover {
       background-color: $gray25;
       color: #0078d4;
     }
 
-    &-onclick {
+    &:active {
       background-color: $gray50;
       color: #0078d4;
     }
 
-    &-disabled {
+    &:disabled {
       background-color: transparent;
       color: $gray300;
     }
   }
 
   &-danger {
-    &-rest {
-      color: $gray0;
-      background-color: $danger-primary;
-    }
+    color: $gray0;
+    background-color: $danger-primary;
 
-    &-hover {
+    &:hover {
       color: $gray0;
       background-color: $danger-tint01;
     }
 
-    &-onclick {
+    &:active {
       color: $gray0;
       background-color: $danger-shade02;
     }
 
-    &-disabled {
+    &:disabled {
       color: $gray400;
       background-color: $danger-tint04;
     }
@@ -124,17 +106,30 @@
     height: 32px;
   }
 
-  &-prepend {
-    font-size: 14px;
-    padding-right: 4px;
-    align-items: center;
+  &-icon {
+    display: inline-flex;
+    vertical-align: middle;
     justify-content: center;
-  }
+    align-items: center;
 
-  &-append {
-    font-size: 14px;
-    padding-left: 60px;
-    align-items: center;
-    justify-content: center;
+    &-append {
+      margin-left: 10px;
+      &.component-btn-icon-split {
+        margin-left: 10px;
+        border-left: 1px solid $gray200;
+        padding-left: 8px;
+        margin-right: -10px;
+      }
+    }
+
+    &-prepend {
+      margin-right: 10px;
+      &.component-btn-icon-split {
+        margin-right: 10px;
+        border-right: 1px solid $gray200;
+        padding-right: 8px;
+        margin-left: -10px;
+      }
+    }
   }
 }

@@ -12,10 +12,11 @@ const Heading = ({
   className = "",
   style,
   variant = "01",
+  color,
 }: IHeading) => {
   return (
     <div
-      style={{ ...style }}
+      style={{ color, ...style }}
       className={`typography heading-${variant} ${
         bold ? "bold" : ""
       } ${className}`}

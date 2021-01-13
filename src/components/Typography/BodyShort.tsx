@@ -12,10 +12,11 @@ const BodyShort = ({
   className = "",
   style,
   variant = "01",
+  color,
 }: IBodyShort) => {
   return (
     <div
-      style={{ ...style }}
+      style={{ color, ...style }}
       className={`typography body-short-${variant} ${
         bold ? "bold" : ""
       } ${className}`}

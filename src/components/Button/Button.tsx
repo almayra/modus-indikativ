@@ -1,24 +1,23 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./button.scss";
-import { FiChevronDown } from "react-icons/fi";
-import { BsFileText } from "react-icons/bs";
 
 interface IButton {
   theme: "primary" | "secondary" | "tertiary" | "danger";
-  state: "rest" | "hover" | "onclick" | "disabled";
+  // state: "rest" | "hover" | "onclick" | "disabled";
   size: "small" | "medium" | "large";
-  label: string;
-  prepend: boolean;
-  append: boolean;
+  children: React.ReactNode;
+  append: ReactNode;
+  prepend: ReactNode;
+  split?: boolean;
 }
 
 export const Button = ({
   theme,
   size,
-  state,
-  label,
-  prepend,
+  children,
   append,
+  prepend,
+  split,
   ...props
 }: IButton) => {
   return (
@@ -27,17 +26,29 @@ export const Button = ({
       className={[
         "component-btn",
         `component-btn-${size}`,
-        `component-btn-${theme}-${state}`,
+        `component-btn-${theme}`,
       ].join(" ")}
       {...props}
     >
-      {prepend === true ? <BsFileText className="component-btn-prepend" /> : ""}
-      {label}
-      {append === true ? (
-        <FiChevronDown className="component-btn-append" />
-      ) : (
-        ""
-      )}
+      {prepend ? (
+        <span
+          className={`component-btn-icon component-btn-icon-prepend ${
+            split ? "component-btn-icon-split" : ""
+          }`}
+        >
+          {prepend}
+        </span>
+      ) : null}
+      {children}
+      {append ? (
+        <span
+          className={`component-btn-icon component-btn-icon-append ${
+            split ? "component-btn-icon-split" : ""
+          }`}
+        >
+          {append}
+        </span>
+      ) : null}
     </button>
   );
 };

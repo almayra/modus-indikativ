@@ -12,10 +12,11 @@ const Metadata = ({
   className = "",
   style,
   variant = "01",
+  color,
 }: IMetadata) => {
   return (
     <div
-      style={{ ...style }}
+      style={{ color, ...style }}
       className={`typography metadata-${variant} ${
         bold ? "bold" : ""
       } ${className}`}

@@ -5,4 +5,5 @@ export interface ITypography extends React.HTMLAttributes<HTMLFontElement> {
   children: ReactNode;
   className?: string;
   style?: CSSProperties;
+  color?: string;
 }
