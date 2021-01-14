@@ -2,14 +2,16 @@ import React from "react";
 import { Button } from "./Button.tsx";
 import { Document16 } from "@carbon/icons-react";
 
-const Prepend = () => (
+const Prepend = () => <Button prepend={<Document16 />}>Prepend</Button>;
+const Append = () => <Button append={<Document16 />}>Append</Button>;
+const PrependSplit = () => (
   <Button split prepend={<Document16 />}>
-    Prepend
+    Prepend Split
   </Button>
 );
-const Append = () => (
+const AppendSplit = () => (
   <Button split append={<Document16 />}>
-    Append
+    Append Split
   </Button>
 );
 
@@ -49,7 +51,9 @@ export const Disable = () => (
 export const WithIcon = () => (
   <div>
     <Prepend />
+    <PrependSplit />
     <Append />
+    <AppendSplit />
   </div>
 );
 
