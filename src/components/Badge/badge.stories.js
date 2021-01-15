@@ -1,37 +1,40 @@
 import { Badge } from "./Badge";
 import { Document16 } from "@carbon/icons-react";
 
-const Template = (args) => <Badge {...args} />;
+export const PlayGround = (args) => <Badge {...args} />;
+PlayGround.args = { inputLabel: "Input Label" };
 
-export const Gray = Template.bind({});
-Gray.args = {
-  color: "gray",
-  icon: <Document16 className="sub-component icon" />,
-};
+export const Variants = () => (
+  <div style={{ display: "flex", flexDirection: "row", gap: 50 }}>
+    <Badge>Input Label</Badge>
+    <Badge color="light-gray">Input Label</Badge>
+    <Badge color="white">Input Label</Badge>
+    <Badge color="red">Input Label</Badge>
+    <Badge color="green">Input Label</Badge>
+    <Badge color="yellow">Input Label</Badge>
+  </div>
+);
 
-export const LigthGray = Template.bind({});
-LigthGray.args = {
-  color: "light-gray",
-  icon: <Document16 className="sub-component icon" />,
-};
-
-export const White = Template.bind({});
-White.args = {
-  color: "white",
-  icon: <Document16 className="sub-component icon" />,
-};
-
-export const Green = Template.bind({});
-Green.args = {
-  color: "green",
-  icon: <Document16 className="sub-component icon" />,
-};
-
-export const Red = Template.bind({});
-Red.args = {
-  color: "red",
-  icon: <Document16 className="sub-component icon" />,
-};
+export const withIcon = () => (
+  <div style={{ display: "flex", flexDirection: "row", gap: 50 }}>
+    <Badge icon={<Document16 className="icon" />}>Input Label</Badge>
+    <Badge icon={<Document16 className="icon" />} color="light-gray">
+      Input Label
+    </Badge>
+    <Badge icon={<Document16 className="icon" />} color="white">
+      Input Label
+    </Badge>
+    <Badge icon={<Document16 className="icon" />} color="red">
+      Input Label
+    </Badge>
+    <Badge icon={<Document16 className="icon" />} color="green">
+      Input Label
+    </Badge>
+    <Badge icon={<Document16 className="icon" />} color="yellow">
+      Input Label
+    </Badge>
+  </div>
+);
 
 const BadgeStory = {
   title: "Atom/Badge",
