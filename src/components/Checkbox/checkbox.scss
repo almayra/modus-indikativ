@@ -1,9 +1,8 @@
 @import "../../sass-modules/colors";
 
-.container {
+.container-component {
   display: block;
   position: relative;
-  cursor: pointer;
 
   &.monochrome {
     .checkbox,
@@ -34,7 +33,11 @@
   }
 
   input[type="checkbox"] {
-    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
   }
 
   .checkbox {
@@ -76,7 +79,7 @@
     &.xsmall {
       height: 12px;
       width: 12px;
-      border-radius: 2px;
+      border-radius: 3px;
 
       &.checkbox:after {
         left: 3px;

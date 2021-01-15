@@ -7,7 +7,6 @@ PlayGround.args = { inputText: "Placeholder", state: "rest" };
 export const withIcon = () => (
   <div>
     <CInput preffix={<ChevronSort16 />} inputText="With Leading Icon" />
-
     <CInput suffix={<ChevronSort16 />} inputText="With Trailing Icon" />
   </div>
 );

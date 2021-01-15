@@ -6,13 +6,15 @@ interface ICheckbox {
   indeterminate: boolean;
   theme: "monochrome" | "green";
   size: "default" | "small" | "xsmall";
+  label?: string;
 }
 
 export const Checkbox = ({
   checked,
-  theme,
-  size,
+  theme = "monochrome",
+  size = "default",
   indeterminate,
+  label,
 }: ICheckbox) => {
   const renderCheckboxIcon = () => {
     if (indeterminate === true) {
@@ -22,9 +24,10 @@ export const Checkbox = ({
     }
   };
   return (
-    <div className={`container ${theme}`}>
+    <div className={`container-component ${theme}`}>
       <input type="checkbox" checked={checked} />
       <span className={renderCheckboxIcon()}></span>
+      {label ? <label style={{ marginLeft: 30 }}>{label}</label> : ""}
     </div>
   );
 };
