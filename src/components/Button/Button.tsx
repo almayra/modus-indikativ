@@ -4,16 +4,16 @@ import "./button.scss";
 interface IButton {
   theme: "primary" | "secondary" | "tertiary" | "danger";
   // state: "rest" | "hover" | "onclick" | "disabled";
-  size: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large";
   children: React.ReactNode;
-  append: ReactNode;
-  prepend: ReactNode;
+  append?: ReactNode;
+  prepend?: ReactNode;
   split?: boolean;
 }
 
 export const Button = ({
   theme,
-  size,
+  size = "medium",
   children,
   append,
   prepend,

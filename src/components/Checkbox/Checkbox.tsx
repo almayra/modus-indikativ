@@ -1,12 +1,13 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import "./checkbox.scss";
 
 interface ICheckbox {
   checked: boolean;
-  indeterminate: boolean;
+  indeterminate?: boolean;
   theme: "monochrome" | "green";
-  size: "default" | "small" | "xsmall";
+  size?: "default" | "small" | "xsmall";
   label?: string;
+  containerStyle: CSSProperties;
 }
 
 export const Checkbox = ({
@@ -15,6 +16,7 @@ export const Checkbox = ({
   size = "default",
   indeterminate,
   label,
+  containerStyle,
 }: ICheckbox) => {
   const renderCheckboxIcon = () => {
     if (indeterminate === true) {
@@ -24,10 +26,13 @@ export const Checkbox = ({
     }
   };
   return (
-    <div className={`container-component ${theme}`}>
+    <div
+      className={`container-component ${theme}`}
+      style={{ ...containerStyle }}
+    >
       <input type="checkbox" checked={checked} />
       <span className={renderCheckboxIcon()}></span>
-      {label ? <label style={{ marginLeft: 30 }}>{label}</label> : ""}
+      {label ? <div style={{ marginLeft: 30 }}>{label}</div> : ""}
     </div>
   );
 };

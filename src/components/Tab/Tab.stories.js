@@ -8,9 +8,9 @@ Playground.args = { inputLabel: "Menu Title", version: "version-1" };
 
 export const Version = () => (
   <div style={{ display: "flex", flexDirection: "row", gap: 50 }}>
-    <Tab inputLabel="Version 01" version="version-1" />
-    <Tab inputLabel="Version 02" version="version-2" />
-    <Tab inputLabel="Version 03" version="version-3" />
+    <Tab inputLabel="Version 01" version="version-1" status="selected" />
+    <Tab inputLabel="Version 02" version="version-2" status="selected" />
+    <Tab inputLabel="Version 03" version="version-3" status="selected" />
   </div>
 );
 
