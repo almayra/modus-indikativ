@@ -11,7 +11,7 @@ interface ITab {
 
 export const Tab = ({ version, status, inputLabel, icon }: ITab) => {
   return (
-    <div className={`tab-item ${version}-${status}`}>
+    <div className={`tab-item ${version} ${status}`}>
       {icon ? icon : null}
       <BodyShort>{inputLabel}</BodyShort>
     </div>
