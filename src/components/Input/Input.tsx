@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Label from "./Label";
 import BottomText from "./BottomText";
 import "./input.scss";
@@ -16,43 +16,35 @@ interface IInput extends HTMLInputElement {
   inputText: string;
   inputLabel: string;
   bottomText: string;
-  prepend: any;
-  append: any;
-  type:
-    | "text"
-    | "textarea"
-    | "number"
-    | "password"
-    | "file"
-    | "select"
-    | "radio"
-    | "date";
+  preffix: ReactNode;
+  suffix: ReactNode;
+  type: "text" | "textarea" | "number" | "password" | "file" | "date";
 }
 
 export const CInput = ({
-  state,
+  state = "rest",
   inputText,
   inputLabel,
   bottomText,
-  append,
-  prepend,
+  suffix,
+  preffix,
   type = "text",
 }: IInput) => {
   return (
     <FormGroup className={`input-container input-state-${state}`}>
       {inputLabel ? <Label>{inputLabel}</Label> : ""}
       <InputGroup size="sm">
-        {prepend ? (
+        {preffix ? (
           <InputGroupAddon addonType="prepend">
-            <InputGroupText>{prepend}</InputGroupText>
+            <InputGroupText>{preffix}</InputGroupText>
           </InputGroupAddon>
         ) : (
           ""
         )}
         <Input placeholder={inputText} type={type} className="input" />
-        {append ? (
+        {suffix ? (
           <InputGroupAddon addonType="append">
-            <InputGroupText>{append}</InputGroupText>
+            <InputGroupText>{suffix}</InputGroupText>
           </InputGroupAddon>
         ) : (
           ""
