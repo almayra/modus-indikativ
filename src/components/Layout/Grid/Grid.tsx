@@ -14,7 +14,7 @@ interface IGrid extends React.HTMLAttributes<HTMLDivElement> {
   sm?: Cols;
   md?: Cols;
   lg?: Cols;
-  spacing?: "sm" | "md" | "lg";
+  spacing?: "01" | "02" | "03" | "04" | "05" | "06" | "07";
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
 }

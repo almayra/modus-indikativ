@@ -6,7 +6,7 @@ import { GridRuler } from "./GridRuler/GridRuler";
 export const Basic = () => {
   return (
     <div style={{ position: "relative" }}>
-      <Grid container spacing="md">
+      <Grid container spacing="01">
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box>Box 1</Box>
         </Grid>
@@ -27,8 +27,8 @@ export const Basic = () => {
 export const WithRuler = () => {
   return (
     <div style={{ position: "relative" }}>
-      <GridRuler spacing="md"></GridRuler>
-      <Grid container spacing="md">
+      <GridRuler spacing="01"></GridRuler>
+      <Grid container spacing="01">
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box>Box 1</Box>
         </Grid>
@@ -49,8 +49,8 @@ export const WithRuler = () => {
 export const PlayGround = (args) => {
   return (
     <div style={{ position: "relative" }}>
-      <GridRuler spacing="md"></GridRuler>
-      <Grid container spacing="md" {...args}>
+      <GridRuler spacing="01"></GridRuler>
+      <Grid container spacing="01" {...args}>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box>Box 1</Box>
         </Grid>
