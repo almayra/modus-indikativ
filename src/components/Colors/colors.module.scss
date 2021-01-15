@@ -5,12 +5,9 @@
   * {
     font-family: "IBM Plex Sans", sans-serif;
     color: $gray800;
-    display: flex;
-    justify-content: space-between;
     padding: 8px;
     vertical-align: middle;
     border-radius: 2px;
-    width: 100%;
   }
 
   // empofarm
@@ -111,13 +108,16 @@
     background-color: $gray200;
   }
   .gray300 {
+    color: $gray25;
     background-color: $gray300;
   }
   .gray400 {
+    color: $gray25;
     background-color: $gray400;
   }
   .gray500 {
-    background-color: $gray25;
+    color: $gray25;
+    background-color: $gray500;
   }
   .gray600 {
     color: $gray25;
