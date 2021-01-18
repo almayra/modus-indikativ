@@ -93,5 +93,24 @@
           0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
       }
     }
+    &.disabled {
+      button {
+        color: $gray200;
+        background-color: $gray0;
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+        &:active {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import "./button.scss";
 
 interface IButton {
@@ -9,6 +9,7 @@ interface IButton {
   append?: ReactNode;
   prepend?: ReactNode;
   split?: boolean;
+  containerStyle: CSSProperties;
 }
 
 export const Button = ({
@@ -18,6 +19,7 @@ export const Button = ({
   append,
   prepend,
   split,
+  containerStyle = {},
   ...props
 }: IButton) => {
   return (
@@ -29,6 +31,7 @@ export const Button = ({
         `component-btn-${theme}`,
       ].join(" ")}
       {...props}
+      style={containerStyle}
     >
       {prepend ? (
         <span
