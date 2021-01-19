@@ -8,7 +8,11 @@ interface IDepth {
 }
 
 export const Depth = ({ depth, children }: IDepth) => {
-  return <div className={`component-depth-${depth}`}>{children}</div>;
+  return (
+    <div className="component-depth">
+      <div className={`component-depth-${depth}`}>{children}</div>
+    </div>
+  );
 };
 
 Depth.propTypes = {

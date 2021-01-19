@@ -13,26 +13,26 @@ interface IModal {
 
 export const Modal = ({ size, modalBody, modalHead }: IModal) => {
   return (
-    // <Depth depth="64">
-    <div className={`modal-container ${size}`}>
-      <Heading variant="02" className="modal-head">
-        {modalHead}
-      </Heading>
-      <BodyShort variant="01" className="modal-body">
-        {modalBody}
-      </BodyShort>
-      <div>
-        <Button containerStyle={{ width: "50%" }} theme="primary">
-          Primary
-        </Button>
-        <Button
-          containerStyle={{ marginLeft: "-1px", width: "50%" }}
-          theme="secondary"
-        >
-          Secondary
-        </Button>
+    <Depth depth="64">
+      <div className={`modal-container ${size}`}>
+        <Heading variant="02" className="modal-head">
+          {modalHead}
+        </Heading>
+        <BodyShort variant="01" className="modal-body">
+          {modalBody}
+        </BodyShort>
+        <div>
+          <Button containerStyle={{ width: "50%" }} theme="primary">
+            Primary
+          </Button>
+          <Button
+            containerStyle={{ marginLeft: "-1px", width: "50%" }}
+            theme="secondary"
+          >
+            Secondary
+          </Button>
+        </div>
       </div>
-    </div>
-    // </Depth>
+    </Depth>
   );
 };
