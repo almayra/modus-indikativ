@@ -1,29 +1,12 @@
 import React from "react";
-import { Button } from "../Button/Button";
+import { ButtonGroup } from "./ButtonGroup";
 
-export const ButtonPair = () => (
-  <div>
-    <Button theme="primary">Primary</Button>
-    <Button theme="secondary">Secondary</Button>
-  </div>
-);
-
-export const ModalFooter = () => (
-  <div>
-    <Button containerStyle={{ width: "50%" }} theme="primary">
-      Primary
-    </Button>
-    <Button
-      containerStyle={{ marginLeft: "-1px", width: "50%" }}
-      theme="secondary"
-    >
-      Secondary
-    </Button>
-  </div>
-);
+export const Playground = (args) => <ButtonGroup {...args} />;
+Playground.args = { gap: false };
 
 const ButtonGroupStory = {
   title: "Molecule/Button Group",
+  component: ButtonGroup,
 };
 
 export default ButtonGroupStory;

@@ -9,7 +9,7 @@ interface IButton {
   append?: ReactNode;
   prepend?: ReactNode;
   split?: boolean;
-  containerStyle: CSSProperties;
+  containerStyle?: CSSProperties;
 }
 
 export const Button = ({
