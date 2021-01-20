@@ -18,11 +18,11 @@
     line-height: 1.75;
     transition: 150ms ease-in-out;
     vertical-align: middle;
+    align-items: center;
 
     &-search {
       width: 20px;
       color: $gray800;
-      padding-top: 7px;
 
       &.hide {
         width: 0;

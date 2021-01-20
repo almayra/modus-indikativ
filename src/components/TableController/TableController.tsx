@@ -2,18 +2,9 @@ import React from "react";
 import { Searchbar } from "../Searchbar/Searchbar";
 import { Checkbox } from "../Checkbox/Checkbox";
 import { Button } from "../Button/Button";
+import { Settings32 } from "@carbon/icons-react";
 
-interface ITableController {
-  searchBar: string;
-  checkboxLabel: string;
-  buttonLabel: string;
-}
-
-export const TableController = ({
-  searchBar,
-  checkboxLabel,
-  buttonLabel,
-}: ITableController) => {
+export const TableController = () => {
   return (
     <div
       style={{
@@ -25,7 +16,7 @@ export const TableController = ({
         justifyContent: "space-between",
       }}
     >
-      <Searchbar width="388px" placeholder={searchBar} />
+      <Searchbar width="388px" placeholder="Cari..." />
       <div
         style={{
           display: "flex",
@@ -38,34 +29,35 @@ export const TableController = ({
           containerStyle={{ height: 24 }}
           theme="monochrome"
           checked={false}
-          label={checkboxLabel}
+          label="Menu"
         />
         <Checkbox
           containerStyle={{ height: 24 }}
           theme="monochrome"
           checked={false}
-          label={checkboxLabel}
+          label="Menu"
         />
         <Checkbox
           containerStyle={{ height: 24 }}
           theme="monochrome"
           checked={true}
-          label={checkboxLabel}
+          label="Menu"
         />
         <Checkbox
           containerStyle={{ height: 24 }}
           theme="monochrome"
           checked={true}
-          label={checkboxLabel}
+          label="Menu"
         />
         <Checkbox
           containerStyle={{ height: 24 }}
           theme="monochrome"
           checked={true}
-          label={checkboxLabel}
+          label="Menu"
         />
+        <Settings32 />
       </div>
-      <Button theme="primary">{buttonLabel}</Button>
+      <Button theme="primary">Button Primary</Button>
     </div>
   );
 };

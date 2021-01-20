@@ -1,11 +1,6 @@
 import { TableController } from "./TableController";
 
-export const PlayGround = (args) => <TableController {...args} />;
-PlayGround.args = {
-  searchBar: "Cari...",
-  checkboxLabel: "Menu",
-  buttonLabel: "Button Primary",
-};
+export const TableControllerUI = (args) => <TableController {...args} />;
 
 const TableControllerStory = {
   title: "Molecule/Table Controller",
