@@ -6,14 +6,9 @@ import { TableFooter } from "./TableFooter";
 import { TableHead } from "./TableHead";
 import { TableHeadCell } from "./TableHeadCell";
 import { TableRow } from "./TableRow";
-import "../Pagination/pagination.scss";
-import {
-  ChevronLeft16,
-  ChevronRight16,
-  ChevronDown16,
-  Document16,
-} from "@carbon/icons-react";
+import { ChevronDown16, Document16 } from "@carbon/icons-react";
 import Metadata from "../Typography/Metadata";
+import { Pagination } from "../Pagination/Pagination";
 
 export const TableBasic = () => (
   <Table>
@@ -37,21 +32,7 @@ export const TableBasic = () => (
     </TableBody>
     <TableFooter>
       <TableCell colSpan={10}>
-        <ul className="pagination">
-          <li className="arrow">
-            <button>
-              <ChevronLeft16 />
-            </button>
-          </li>
-          <li className="number active">
-            <button>1</button>
-          </li>
-          <li className="arrow">
-            <button>
-              <ChevronRight16 />
-            </button>
-          </li>
-        </ul>
+        <Pagination />
       </TableCell>
     </TableFooter>
   </Table>
@@ -101,21 +82,7 @@ export const TableDark = () => (
     </TableBody>
     <TableFooter>
       <TableCell colSpan={10}>
-        <ul className="pagination">
-          <li className="arrow">
-            <button>
-              <ChevronLeft16 />
-            </button>
-          </li>
-          <li className="number active">
-            <button>1</button>
-          </li>
-          <li className="arrow">
-            <button>
-              <ChevronRight16 />
-            </button>
-          </li>
-        </ul>
+        <Pagination />
       </TableCell>
     </TableFooter>
   </Table>
@@ -171,21 +138,7 @@ export const TableBordered = () => (
     </TableBody>
     <TableFooter>
       <TableCell colSpan={10}>
-        <ul className="pagination">
-          <li className="arrow">
-            <button>
-              <ChevronLeft16 />
-            </button>
-          </li>
-          <li className="number active">
-            <button>1</button>
-          </li>
-          <li className="arrow">
-            <button>
-              <ChevronRight16 />
-            </button>
-          </li>
-        </ul>
+        <Pagination />
       </TableCell>
     </TableFooter>
   </Table>
@@ -215,21 +168,7 @@ export const TableBorderedDark = () => (
     </TableBody>
     <TableFooter>
       <TableCell colSpan={10}>
-        <ul className="pagination">
-          <li className="arrow">
-            <button>
-              <ChevronLeft16 />
-            </button>
-          </li>
-          <li className="number active">
-            <button>1</button>
-          </li>
-          <li className="arrow">
-            <button>
-              <ChevronRight16 />
-            </button>
-          </li>
-        </ul>
+        <Pagination />
       </TableCell>
     </TableFooter>
   </Table>

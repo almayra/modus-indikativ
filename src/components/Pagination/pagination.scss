@@ -83,7 +83,11 @@
     button {
       border: 1px solid $gray100;
       color: $gray700;
+      &:hover {
+        background-color: $gray50;
+      }
     }
+
     &.active {
       button {
         color: $empofarm-primary;
@@ -106,6 +110,7 @@
           box-shadow: none;
           outline: none;
         }
+
         &:active {
           box-shadow: none;
           outline: none;
