@@ -21,32 +21,52 @@ Playground.args = { children: "Button Text" };
 
 export const Variants = () => (
   <div>
-    <Button theme="primary">Primary</Button>
-    <Button theme="secondary">Secondary</Button>
-    <Button theme="tertiary">Tertiary</Button>
-    <Button theme="danger">Danger</Button>
+    <Grid container spacing="01">
+      <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Button theme="primary">Primary</Button>
+      </Grid>
+      <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Button theme="secondary">Secondary</Button>
+      </Grid>
+      <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Button theme="tertiary">Tertiary</Button>
+      </Grid>
+      <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Button theme="danger">Danger</Button>
+      </Grid>
+    </Grid>
   </div>
 );
 
 export const Size = () => (
-  <div>
-    <Button theme="primary" size="small">
-      Small
-    </Button>
-    <Button theme="primary">Medium</Button>
-    <Button theme="primary" size="large">
-      Large
-    </Button>
-  </div>
+  <Grid container spacing="01">
+    <Grid item xs={12} sm={12} md={3} lg={3}>
+      <Button theme="primary" size="small">
+        Small
+      </Button>
+    </Grid>
+    <Grid item xs={12} sm={12} md={3} lg={3}>
+      <Button theme="primary">Medium</Button>
+    </Grid>
+    <Grid item xs={12} sm={12} md={3} lg={3}>
+      <Button theme="primary" size="large">
+        Large
+      </Button>
+    </Grid>
+  </Grid>
 );
 
 export const Disable = () => (
-  <div>
-    <Button theme="primary">Rest</Button>
-    <Button theme="primary" disabled>
-      Disabled
-    </Button>
-  </div>
+  <Grid container spacing="01">
+    <Grid item xs={12} sm={12} md={3} lg={3}>
+      <Button theme="primary">Rest</Button>
+    </Grid>
+    <Grid item xs={12} sm={12} md={3} lg={3}>
+      <Button theme="primary" disabled>
+        Disabled
+      </Button>
+    </Grid>
+  </Grid>
 );
 
 export const WithIcon = () => (

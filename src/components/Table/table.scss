@@ -32,8 +32,9 @@
       color: $gray700;
 
       .icon {
+        vertical-align: 2px;
         align-items: center;
-        vertical-align: middle;
+        // vertical-align: middle;
 
         &.prepend {
           padding-right: 8px;
@@ -55,16 +56,14 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 20px;
-      vertical-align: middle;
 
       &.dual-string {
         padding: 0;
       }
 
       .icon {
-        align-items: center;
-        vertical-align: middle;
         padding-right: 8px;
+        vertical-align: 2px;
       }
 
       &.bold {
