@@ -17,11 +17,13 @@ export const TopBar = () => {
           <img className="logo" src={ODOO} alt="odoo" height={24} />
           <div className="divider" />
           <Select
-            containerStyle={{ width: 100, backgroundColor: "#fff" }}
+            containerStyle={{ width: "fit-content", backgroundColor: "#fff" }}
             className="select"
             type="inline-select"
+            placeholder="User Role"
           >
-            <option>User Role</option>
+            <option>Super Admin</option>
+            <option>Finance Admin</option>
           </Select>
         </div>
         <div className="tail">

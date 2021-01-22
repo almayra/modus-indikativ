@@ -8,6 +8,7 @@ interface ICheckbox {
   size?: "default" | "small" | "xsmall";
   label?: string;
   containerStyle: CSSProperties;
+  className?: string;
 }
 
 export const Checkbox = ({
@@ -17,6 +18,7 @@ export const Checkbox = ({
   indeterminate,
   label,
   containerStyle,
+  className,
 }: ICheckbox) => {
   const renderCheckboxIcon = () => {
     if (indeterminate === true) {
@@ -27,7 +29,7 @@ export const Checkbox = ({
   };
   return (
     <div
-      className={`container-component ${theme}`}
+      className={`container-component ${theme} ${className}`}
       style={{ ...containerStyle }}
     >
       <input type="checkbox" checked={checked} />

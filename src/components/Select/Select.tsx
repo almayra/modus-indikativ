@@ -9,6 +9,7 @@ interface ISelect extends React.HTMLAttributes<HTMLSelectElement> {
   title?: string;
   className?: string;
   containerStyle?: CSSProperties;
+  placeholder?: string;
 }
 
 export const Select = ({
@@ -17,6 +18,7 @@ export const Select = ({
   type,
   className,
   containerStyle,
+  placeholder,
   ...props
 }: ISelect) => {
   return (
@@ -27,6 +29,11 @@ export const Select = ({
         {...props}
         className={`${type} ${className}`}
       >
+        {placeholder ? (
+          <option value="" disabled selected>
+            {placeholder}
+          </option>
+        ) : null}
         {children}
       </select>
     </div>
