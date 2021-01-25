@@ -1,0 +1,34 @@
+@import "../../sass-modules/colors";
+
+.parent-list {
+  display: flex;
+  background-color: $gray25;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &:hover {
+    background-color: $gray100;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    padding: 14px 16px 16px 14px;
+  }
+  .icon {
+    color: $gray700;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $gray700;
+      color: $gray0;
+    }
+  }
+}
