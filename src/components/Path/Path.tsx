@@ -1,21 +1,20 @@
-import React from "react";
-import { Divider } from "./Divider";
+import React, { ReactNode } from "react";
 import "./path.scss";
-import { Checkmark16 } from "@carbon/icons-react";
 
 interface IPath {
   stage: "start" | "middle" | "end";
   state: "default" | "active" | "complete" | "lost";
-  component: "before" | "after";
+  right?: boolean;
+  left?: boolean;
+  children: ReactNode;
 }
 
-export const Path = ({ stage, state, component }: IPath) => {
+export const Path = ({ stage, state, right, left, children }: IPath) => {
   return (
     <div className={`path ${state}`}>
-      <div className={`${stage}`}>
-        <Checkmark16 />
-      </div>
-      <div className={`divider-${component}`}></div>
+      {right ? <span className={`divider-after`}></span> : null}
+      <div className={`${stage}`}>{children}</div>
+      {left ? <span className={`divider-before`}></span> : null}
     </div>
   );
 };

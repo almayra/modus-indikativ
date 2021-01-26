@@ -1,30 +1,33 @@
 @import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 .path {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
 
   &.default {
     .start {
       color: $gray700;
-      background-color: $gray500;
+      background-color: $gray50;
     }
     .middle {
       color: $gray700;
-      background-color: $gray500;
+      background-color: $gray50;
     }
     .end {
       color: $gray700;
-      background-color: $gray500;
+      background-color: $gray50;
     }
     .divider-before {
-      border-left: 10px solid $gray500;
+      border-left: 10px solid $gray50;
     }
     .divider-after {
-      border-top: 20px solid $gray500;
-      border-bottom: 20px solid $gray500;
+      border-top: 17.5px solid $gray50;
+      border-bottom: 17.5px solid $gray50;
     }
   }
 
@@ -42,8 +45,8 @@
       border-left: 10px solid #005fb2;
     }
     .divider-after {
-      border-top: 20px solid #005fb2;
-      border-bottom: 20px solid #005fb2;
+      border-top: 17.5px solid #005fb2;
+      border-bottom: 17.5px solid #005fb2;
     }
   }
 
@@ -61,8 +64,8 @@
       border-left: 10px solid #4bca81;
     }
     .divider-after {
-      border-top: 20px solid #4bca81;
-      border-bottom: 20px solid #4bca81;
+      border-top: 17.5px solid #4bca81;
+      border-bottom: 17.5px solid #4bca81;
     }
   }
 
@@ -80,8 +83,8 @@
       border-left: 10px solid #c23934;
     }
     .divider-after {
-      border-top: 20px solid #c23934;
-      border-bottom: 20px solid #c23934;
+      border-top: 17.5px solid #c23934;
+      border-bottom: 17.5px solid #c23934;
     }
   }
 
@@ -112,15 +115,15 @@
 
   .divider {
     &-before {
-      border-left: 10px solid $gray500;
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
     }
 
     &-after {
-      border-left: 10px solid transparent;
-      border-top: 20px solid $gray500;
-      border-bottom: 20px solid $gray500;
+      border-left: 8px solid transparent;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
     }
   }
 }
