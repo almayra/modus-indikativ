@@ -1,0 +1,126 @@
+@import "../../sass-modules/colors";
+
+.path {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &.default {
+    .start {
+      color: $gray700;
+      background-color: $gray500;
+    }
+    .middle {
+      color: $gray700;
+      background-color: $gray500;
+    }
+    .end {
+      color: $gray700;
+      background-color: $gray500;
+    }
+    .divider-before {
+      border-left: 10px solid $gray500;
+    }
+    .divider-after {
+      border-top: 20px solid $gray500;
+      border-bottom: 20px solid $gray500;
+    }
+  }
+
+  &.active {
+    .start {
+      background-color: #005fb2;
+    }
+    .middle {
+      background-color: #005fb2;
+    }
+    .end {
+      background-color: #005fb2;
+    }
+    .divider-before {
+      border-left: 10px solid #005fb2;
+    }
+    .divider-after {
+      border-top: 20px solid #005fb2;
+      border-bottom: 20px solid #005fb2;
+    }
+  }
+
+  &.complete {
+    .start {
+      background-color: #4bca81;
+    }
+    .middle {
+      background-color: #4bca81;
+    }
+    .end {
+      background-color: #4bca81;
+    }
+    .divider-before {
+      border-left: 10px solid #4bca81;
+    }
+    .divider-after {
+      border-top: 20px solid #4bca81;
+      border-bottom: 20px solid #4bca81;
+    }
+  }
+
+  &.lost {
+    .start {
+      background-color: #c23934;
+    }
+    .middle {
+      background-color: #c23934;
+    }
+    .end {
+      background-color: #c23934;
+    }
+    .divider-before {
+      border-left: 10px solid #c23934;
+    }
+    .divider-after {
+      border-top: 20px solid #c23934;
+      border-bottom: 20px solid #c23934;
+    }
+  }
+
+  .start {
+    color: $gray0;
+    padding: 6px 12px;
+    background-color: $gray25;
+    border: 2px solid transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .middle {
+    color: $gray0;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    background-color: $gray25;
+  }
+
+  .end {
+    color: $gray0;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    background-color: $gray25;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .divider {
+    &-before {
+      border-left: 10px solid $gray500;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    &-after {
+      border-left: 10px solid transparent;
+      border-top: 20px solid $gray500;
+      border-bottom: 20px solid $gray500;
+    }
+  }
+}
