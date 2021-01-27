@@ -1,16 +1,22 @@
 import React from "react";
 import Metadata from "../Typography/Metadata";
 
-export const BottomContent = () => {
+interface IBottomContent {
+  supportingText: string;
+  textLayer: string;
+}
+
+export const BottomContent = ({
+  supportingText,
+  textLayer,
+}: IBottomContent) => {
   return (
     <div className="bottom-content">
       <Metadata variant="02" style={{ color: "#6e6e6e" }}>
-        20 Januari 1975
+        {supportingText}
       </Metadata>
       <Metadata variant="02" style={{ color: "#404040" }}>
-        Orci id massa id lacus. Ullamcorper sed pretium eget faucibus
-        condimentum turpis. Sit diam et varius vitae pharetra tellus euismod a
-        vel adipiscing sed sed.
+        {textLayer}
       </Metadata>
     </div>
   );
