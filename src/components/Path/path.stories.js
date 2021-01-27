@@ -2,7 +2,13 @@ import { Path } from "./Path";
 import { Checkmark16 } from "@carbon/icons-react";
 
 export const PlayGround = (args) => <Path {...args} />;
-PlayGround.args = { stage: "middle", component: "before", state: "defailt" };
+PlayGround.args = {
+  stage: "middle",
+  component: "before",
+  state: "defailt",
+  left: true,
+  right: true,
+};
 
 export const PathFlow = () => (
   <div style={{ display: "flex", alignItems: "center" }}>

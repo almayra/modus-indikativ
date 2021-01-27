@@ -1,0 +1,29 @@
+@import "../../sass-modules/colors";
+
+.vertical-tile {
+  max-width: 15rem;
+  background-color: $gray0;
+
+  .primitive-tile {
+    display: inline-flex;
+    flex-direction: row;
+    .image {
+      width: 100%;
+      // height: 240px;
+    }
+
+    .component-overflow {
+      margin-left: -32px;
+    }
+  }
+
+  .bottom-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upper-content {
+    padding: 8px;
+  }
+}

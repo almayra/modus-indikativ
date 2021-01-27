@@ -6,9 +6,10 @@ import { Depth } from "../Depth/Depth";
 interface IOverflow {
   dark?: boolean;
   children: ReactNode;
+  className?: string;
 }
 
-export const Overflow = ({ dark, children }: IOverflow) => {
+export const Overflow = ({ dark, children, className }: IOverflow) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleDropdown = () => {
@@ -19,7 +20,7 @@ export const Overflow = ({ dark, children }: IOverflow) => {
       <Depth depth="4">
         <div className="toggle">
           <button
-            className={`overflow button ${isOpen ? "focus" : ""} ${
+            className={`overflow button ${isOpen ? "focus" : ""} ${className} ${
               dark ? "dark" : ""
             }`}
             onClick={toggleDropdown}
