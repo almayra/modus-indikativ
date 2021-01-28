@@ -1,9 +1,13 @@
 import React from "react";
 import { ButtonGroup } from "./ButtonGroup";
+import { Button } from "../Button/Button";
 
-export const Playground = (args) => <ButtonGroup {...args} />;
-Playground.args = { gap: false };
-
+export const ButtonPair = () => (
+  <ButtonGroup separate>
+    <Button theme="primary">Primary</Button>
+    <Button theme="secondary">Secondary</Button>
+  </ButtonGroup>
+);
 const ButtonGroupStory = {
   title: "Molecule/Button Group",
   component: ButtonGroup,

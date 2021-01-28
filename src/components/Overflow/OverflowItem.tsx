@@ -5,11 +5,16 @@ import "./overflow.scss";
 interface IOverflowItem {
   children: ReactNode;
   size?: "small" | "default" | "large";
+  className: string;
 }
 
-export const OverflowItem = ({ children, size = "default" }: IOverflowItem) => {
+export const OverflowItem = ({
+  children,
+  size = "default",
+  className,
+}: IOverflowItem) => {
   return (
-    <li className={`menu-item ${size}`}>
+    <li className={`menu-item ${size} ${className}`}>
       <Metadata variant="02">{children}</Metadata>
     </li>
   );
