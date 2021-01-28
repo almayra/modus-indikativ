@@ -38,6 +38,9 @@
       "react-app/jest"
     ]
   },
+  "files": [
+    "src"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -59,7 +62,7 @@
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.11"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Design system for FanAttics Product Line Up",
   "main": "index.js",
   "repository": {
     "type": "git",
