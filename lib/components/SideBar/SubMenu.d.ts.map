@@ -1,0 +1,1 @@
+{"version":3,"file":"SubMenu.d.ts","sourceRoot":"","sources":["../../../src/components/SideBar/SubMenu.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AACzC,OAAO,gBAAgB,CAAC;AAExB,UAAU,QAAQ;IAChB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,CAAC,EAAE,OAAO,CAAC;IACjB,QAAQ,CAAC,EAAE,SAAS,CAAC;CACtB;AAED,eAAO,MAAM,OAAO,gCAAiC,QAAQ,gBAM5D,CAAC;AAEF,eAAe,OAAO,CAAC"}

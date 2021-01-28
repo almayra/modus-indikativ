@@ -1,0 +1,1 @@
+{"version":3,"file":"ChatBottomText.d.ts","sourceRoot":"","sources":["../../../src/components/ChatRoom/ChatBottomText.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAGzC,UAAU,eAAe;IACvB,QAAQ,EAAE,SAAS,CAAC;IACpB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,eAAO,MAAM,cAAc,4BAA6B,eAAe,gBAMtE,CAAC;AAEF,eAAe,cAAc,CAAC"}

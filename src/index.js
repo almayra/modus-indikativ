@@ -1,19 +1,53 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import * as Addon from "./components";
+import * as Badge from "./components";
+import * as Button from "./components";
+import * as ButtonGroup from "./components";
+import * as ChatRoom from "./components";
+import * as Checkbox from "./components";
+import * as Depth from "./components";
+import * as Dropdown from "./components";
+import * as Input from "./components";
+import * as Layout from "./components";
+import * as Modal from "./components";
+import * as Overflow from "./components";
+import * as Pagination from "./components";
+import * as ParentList from "./components";
+import * as Path from "./components";
+import * as Searchbar from "./components";
+import * as Select from "./components";
+import * as SideBar from "./components";
+import * as Tab from "./components";
+import * as Table from "./components";
+import * as TableController from "./components";
+import * as TopBar from "./components";
+import * as Typography from "./components";
+import * as VerticalTile from "./components";
+
+export {
+  Addon,
+  Badge,
+  Button,
+  ButtonGroup,
+  ChatRoom,
+  Checkbox,
+  Depth,
+  Dropdown,
+  Input,
+  Layout,
+  Modal,
+  Overflow,
+  Pagination,
+  ParentList,
+  Path,
+  Searchbar,
+  Select,
+  SideBar,
+  Tab,
+  Table,
+  TableController,
+  TopBar,
+  Typography,
+  VerticalTile,
+};
+
 export * from "./components";
-// import "./components/Input/node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

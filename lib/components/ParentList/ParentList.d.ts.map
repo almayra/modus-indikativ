@@ -1,0 +1,1 @@
+{"version":3,"file":"ParentList.d.ts","sourceRoot":"","sources":["../../../src/components/ParentList/ParentList.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAmB,MAAM,OAAO,CAAC;AACxC,OAAO,mBAAmB,CAAC;AAG3B,UAAU,WAAW;IACnB,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;IAC1B,WAAW,CAAC,EAAE,OAAO,CAAC;IACtB,SAAS,EAAE,MAAM,CAAC;CACnB;AAED,eAAO,MAAM,UAAU,0CAIpB,WAAW,gBA2Bb,CAAC;AAEF,eAAe,UAAU,CAAC"}

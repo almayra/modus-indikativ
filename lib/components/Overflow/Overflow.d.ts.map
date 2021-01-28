@@ -1,0 +1,1 @@
+{"version":3,"file":"Overflow.d.ts","sourceRoot":"","sources":["../../../src/components/Overflow/Overflow.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,SAAS,EAAY,MAAM,OAAO,CAAC;AAEnD,OAAO,iBAAiB,CAAC;AAGzB,UAAU,SAAS;IACjB,IAAI,CAAC,EAAE,OAAO,CAAC;IACf,QAAQ,EAAE,SAAS,CAAC;IACpB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,eAAO,MAAM,QAAQ,kCAAmC,SAAS,gBAuBhE,CAAC;AAEF,eAAe,QAAQ,CAAC"}

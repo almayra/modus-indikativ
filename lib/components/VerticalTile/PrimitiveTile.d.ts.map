@@ -1,0 +1,1 @@
+{"version":3,"file":"PrimitiveTile.d.ts","sourceRoot":"","sources":["../../../src/components/VerticalTile/PrimitiveTile.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,qBAAqB,CAAC;AAE7B,UAAU,cAAc;IACtB,WAAW,EAAE,MAAM,CAAC;IACpB,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;CAC3B;AAED,eAAO,MAAM,aAAa,8BAA+B,cAAc,gBAOtE,CAAC;AAEF,eAAe,aAAa,CAAC"}

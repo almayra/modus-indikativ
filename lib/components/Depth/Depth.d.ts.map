@@ -1,0 +1,1 @@
+{"version":3,"file":"Depth.d.ts","sourceRoot":"","sources":["../../../src/components/Depth/Depth.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,gCAAgC,CAAC;AAExC,UAAU,MAAM;IACd,KAAK,EAAE,GAAG,GAAG,GAAG,GAAG,IAAI,GAAG,IAAI,CAAC;IAC/B,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;CAC3B;AAED,eAAO,MAAM,KAAK,wBAAyB,MAAM,gBAMhD,CAAC;AAEF,eAAe,KAAK,CAAC"}

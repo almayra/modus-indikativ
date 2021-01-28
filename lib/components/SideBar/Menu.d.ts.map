@@ -1,0 +1,1 @@
+{"version":3,"file":"Menu.d.ts","sourceRoot":"","sources":["../../../src/components/SideBar/Menu.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AACzC,OAAO,gBAAgB,CAAC;AAIxB,UAAU,KAAK;IACb,KAAK,EAAE,MAAM,CAAC;IACd,IAAI,CAAC,EAAE,OAAO,CAAC;IACf,QAAQ,CAAC,EAAE,SAAS,CAAC;CACtB;AAED,eAAO,MAAM,IAAI,8BAA+B,KAAK,gBAUpD,CAAC;AAEF,eAAe,IAAI,CAAC"}
