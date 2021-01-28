@@ -1,7 +1,7 @@
 {
   "name": "modus-indikativ",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@carbon/icons-react": "^10.22.0",
     "@testing-library/jest-dom": "^5.11.6",
@@ -58,5 +58,20 @@
     "@storybook/node-logger": "^6.1.11",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.11"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almayra/modus-indikativ.git"
+  },
+  "keywords": [
+    "modusindikativ"
+  ],
+  "author": "almayra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almayra/modus-indikativ/issues"
+  },
+  "homepage": "https://github.com/almayra/modus-indikativ#readme"
 }

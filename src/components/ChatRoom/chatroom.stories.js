@@ -9,7 +9,7 @@ Playground.args = {
   time: "00.00",
   messageText: "Message Text",
   append: <Download16 />,
-  img: <img src={FILE} alt="file" className="with-image" />,
+  img: FILE,
   sender: "inbound-chat",
 };
 
@@ -46,7 +46,7 @@ export const WithImage = () => (
     messageText="Document.pdf"
     prepend={<Document16 />}
     append={<Download16 />}
-    img={<img src={FILE} alt="file" className="with-image" />}
+    img={FILE}
   />
 );
 

@@ -10,7 +10,7 @@ interface IChatRoom {
   messageText: string;
   prepend?: ReactNode;
   append?: ReactNode;
-  img?: ReactNode;
+  img?: string;
   linkText?: boolean;
 }
 
@@ -28,7 +28,8 @@ export const ChatRoom = ({
     <div className={`chat-room ${sender}`}>
       <div className="bubble">
         {img ? (
-          <div className={` ${img ? "with-image" : ""}`}>{img}</div>
+          // <div className={` ${img ? "with-image" : ""}`}>{img}</div>
+          <img alt="foto" src={img} className="with-image" />
         ) : null}
         <div className="text-message">
           {prepend ? <span className="icon prepend">{prepend} </span> : ""}
