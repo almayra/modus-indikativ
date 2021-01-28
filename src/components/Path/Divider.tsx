@@ -9,3 +9,5 @@ interface IDivider {
 export const Divider = ({ stage }: IDivider) => {
   return <span className={`divider-${stage}`}></span>;
 };
+
+export default Divider;

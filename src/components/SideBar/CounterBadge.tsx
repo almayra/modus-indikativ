@@ -15,3 +15,5 @@ export const CounterBadge = ({ counter }: ICounterBadge) => {
     </div>
   );
 };
+
+export default CounterBadge;

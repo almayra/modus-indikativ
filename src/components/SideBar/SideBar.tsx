@@ -12,3 +12,5 @@ export const Sidebar = ({ children }: ISidebar) => {
     </nav>
   );
 };
+
+export default Sidebar;

@@ -7,3 +7,5 @@ interface ITableFooter extends React.HTMLAttributes<HTMLTableSectionElement> {
 export const TableFooter = ({ children, ...props }: ITableFooter) => {
   return <tfoot {...props}>{children}</tfoot>;
 };
+
+export default TableFooter;

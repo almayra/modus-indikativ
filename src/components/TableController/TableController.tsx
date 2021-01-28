@@ -51,3 +51,5 @@ export const TableController = () => {
     </div>
   );
 };
+
+export default TableController;

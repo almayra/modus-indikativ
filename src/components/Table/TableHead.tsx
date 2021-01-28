@@ -12,3 +12,5 @@ export const TableHead = ({ children, dark, ...props }: ITableHead) => {
     </thead>
   );
 };
+
+export default TableHead;

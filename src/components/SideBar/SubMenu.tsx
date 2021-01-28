@@ -14,3 +14,5 @@ export const SubMenu = ({ label, active, children }: ISubMenu) => {
     </li>
   );
 };
+
+export default SubMenu;

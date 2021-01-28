@@ -27,3 +27,5 @@ export const Badge = ({
 Badge.defaultProps = {
   inputLabel: "Label",
 };
+
+export default Badge;

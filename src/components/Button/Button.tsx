@@ -62,3 +62,5 @@ Button.defaultProps = {
   size: "medium",
   onClick: undefined,
 };
+
+export default Button;

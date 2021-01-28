@@ -58,3 +58,5 @@ export const CInput = ({
     </FormGroup>
   );
 };
+
+export default CInput;

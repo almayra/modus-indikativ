@@ -33,3 +33,5 @@ export const Breadcrumb = ({ inputLabel }: IBreadcrumb) => {
     </div>
   );
 };
+
+export default Breadcrumb;

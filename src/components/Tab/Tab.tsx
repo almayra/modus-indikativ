@@ -18,7 +18,4 @@ export const Tab = ({ version, status, inputLabel, icon }: ITab) => {
   );
 };
 
-Tab.defaultProps = {
-  version: "version-1",
-  inputLabel: "Menu Title",
-};
+export default Tab;

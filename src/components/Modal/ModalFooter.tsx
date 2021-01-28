@@ -22,3 +22,5 @@ export const ModalFooter = ({ primaryLabel, secondaryLabel }: IModalFooter) => {
     </div>
   );
 };
+
+export default ModalFooter;

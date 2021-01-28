@@ -40,3 +40,5 @@ export const ParentList = ({
     </div>
   );
 };
+
+export default ParentList;

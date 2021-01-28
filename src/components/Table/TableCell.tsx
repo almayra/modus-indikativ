@@ -27,3 +27,5 @@ export const TableCell = ({
     </td>
   );
 };
+
+export default TableCell;

@@ -17,3 +17,5 @@ export const Table = ({ children, className, bordered, ...props }: ITable) => {
     </table>
   );
 };
+
+export default Table;

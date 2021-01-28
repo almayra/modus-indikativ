@@ -20,3 +20,5 @@ export const Menu = ({ label, icon, children }: IMenu) => {
     </li>
   );
 };
+
+export default Menu;

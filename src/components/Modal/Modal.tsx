@@ -15,3 +15,5 @@ export const Modal = ({ size, children, className }: IModal) => {
     </Depth>
   );
 };
+
+export default Modal;

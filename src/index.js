@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+export * from "./components";
 // import "./components/Input/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(

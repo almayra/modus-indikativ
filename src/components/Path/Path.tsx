@@ -18,3 +18,5 @@ export const Path = ({ stage, state, right, left, children }: IPath) => {
     </div>
   );
 };
+
+export default Path;

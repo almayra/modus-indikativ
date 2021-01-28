@@ -26,3 +26,5 @@ export const TableHeadCell = ({
     </th>
   );
 };
+
+export default TableHeadCell;

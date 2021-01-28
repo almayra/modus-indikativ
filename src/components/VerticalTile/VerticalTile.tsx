@@ -8,3 +8,5 @@ interface IVerticalTile {
 export const VerticalTile = ({ children }: IVerticalTile) => {
   return <div className="vertical-tile">{children}</div>;
 };
+
+export default VerticalTile;

@@ -33,3 +33,5 @@ export const Overflow = ({ dark, children, className }: IOverflow) => {
     </div>
   );
 };
+
+export default Overflow;

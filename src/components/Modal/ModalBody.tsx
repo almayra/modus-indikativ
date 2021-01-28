@@ -13,3 +13,5 @@ export const ModalBody = ({ children }: IModalBody) => {
     </BodyShort>
   );
 };
+
+export default ModalBody;

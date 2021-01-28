@@ -44,3 +44,5 @@ export const ChatRoom = ({
     </div>
   );
 };
+
+export default ChatRoom;

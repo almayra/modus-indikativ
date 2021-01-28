@@ -7,3 +7,5 @@ interface IButtonGroup {
 export const ButtonGroup = ({ children }: IButtonGroup) => {
   return <span>{children}</span>;
 };
+
+export default ButtonGroup;

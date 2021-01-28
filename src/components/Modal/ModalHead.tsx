@@ -13,3 +13,5 @@ export const ModalHead = ({ children }: IModalHead) => {
     </Heading>
   );
 };
+
+export default ModalHead;

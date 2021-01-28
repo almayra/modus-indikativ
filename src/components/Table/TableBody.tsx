@@ -12,3 +12,5 @@ export const TableBody = ({ children, ref, ...props }: ITableBody) => {
     </tbody>
   );
 };
+
+export default TableBody;

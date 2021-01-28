@@ -52,3 +52,5 @@ export const TopBar = () => {
     </Depth>
   );
 };
+
+export default TopBar;
