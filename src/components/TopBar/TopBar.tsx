@@ -1,20 +1,33 @@
 import React from "react";
-import EMPOFARM from "../../assets/images/empofarm.png";
-import ODOO from "../../assets/images/odoo.png";
-import AVATAR from "../../assets/images/avatar.png";
 import { Select } from "../Select/Select";
 import "./topbar.scss";
 import Metadata from "../Typography/Metadata";
 import { Help16, Notification16, Power16 } from "@carbon/icons-react";
 import { Depth } from "../Depth/Depth";
 
-export const TopBar = () => {
+interface ITopBar {
+  firstLogo: string;
+  secondLogo: string;
+  avatar: string;
+  username: string;
+  adminRole: string;
+  children: React.ReactNode;
+}
+
+export const TopBar = ({
+  firstLogo,
+  secondLogo,
+  avatar,
+  username,
+  adminRole,
+  children,
+}: ITopBar) => {
   return (
     <Depth depth="16">
       <div className="navbar-container">
         <div className="head">
-          <img className="logo" src={EMPOFARM} alt="empofarm" height={32} />
-          <img className="logo" src={ODOO} alt="odoo" height={24} />
+          <img className="logo" src={firstLogo} alt="empofarm" height={32} />
+          <img className="logo" src={secondLogo} alt="odoo" height={24} />
           <div className="divider" />
           <Select
             containerStyle={{ width: "fit-content", backgroundColor: "#fff" }}
@@ -22,8 +35,7 @@ export const TopBar = () => {
             type="inline-select"
             placeholder="User Role"
           >
-            <option>Super Admin</option>
-            <option>Finance Admin</option>
+            {children}
           </Select>
         </div>
         <div className="tail">
@@ -34,14 +46,14 @@ export const TopBar = () => {
           <Power16 className="icon" />
           <div className="profile">
             <Metadata className="text" variant="02">
-              Admin
+              {adminRole}
             </Metadata>
             <div className="divider" />
             <Metadata className="text" variant="02">
-              Mahar Santara
+              {username}
             </Metadata>
             <img
-              src={AVATAR}
+              src={avatar}
               height={33}
               alt="avatar"
               style={{ borderRadius: 20 }}

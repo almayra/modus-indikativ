@@ -1,6 +1,6 @@
 {
   "name": "modus-indikativ",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "private": false,
   "files": [
     "lib"
@@ -83,5 +83,8 @@
   "bugs": {
     "url": "https://github.com/almayra/modus-indikativ/issues"
   },
-  "homepage": "https://github.com/almayra/modus-indikativ#readme"
+  "homepage": "https://github.com/almayra/modus-indikativ#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
